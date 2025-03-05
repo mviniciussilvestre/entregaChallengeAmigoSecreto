@@ -13,3 +13,27 @@
 
 //Lista para receber os nomes dos participantes.
 let amigos = [];
+
+
+//Função para adicionar amigos.
+function adicionarAmigo(){
+    
+    //Recebendo o texto digitado na entrada.
+    let addAmigo = document.getElementById("amigo");
+    let nomeAmigo = addAmigo.value;
+
+    //Validando a entrada para não receber um valor vazio.
+    if(!nomeAmigo){
+        alert("Por favor, insira um nome.")
+        return;
+    }
+
+    //Insere o nome do amigo na lista após validação.
+    amigos.push(nomeAmigo);
+    console.log(amigos); //Exibindo no console.
+    addAmigo.focus();
+
+    //Limpar o campo de entrada
+    addAmigo.value = ""
+
+}
