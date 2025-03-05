@@ -26,6 +26,7 @@ Os nomes inseridos são exibidos em uma lista visível na página, a medida que 
 
 Ao finalizar, é necessário clicar no botão "Sortear Amigo" para que o "Amigo Secreto" seja sorteado e exibido na tela.
 
+[Clique e utilize a aplicação](https://mviniciussilvestre.github.io/entregaChallengeAmigoSecreto/).
 
 ## 📁 Acesso ao projeto
 
