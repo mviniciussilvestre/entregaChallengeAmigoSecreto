@@ -11,3 +11,5 @@
 //4.Sorteio aleatório: Ao clicar no botão "Sortear Amigo", um nome da lista será selecionado aleatoriamente e 
 //exibido na página.
 
+//Lista para receber os nomes dos participantes.
+let amigos = [];
