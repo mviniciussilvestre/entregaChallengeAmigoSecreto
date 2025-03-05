@@ -52,3 +52,26 @@ function adicionarAmigo(){
             listaAmigos.appendChild(item);
         }
     }
+
+    //Função para sortear os amigos.
+    function sortearAmigo(){
+
+        //Validando se temos amigos disponivéis.
+        if (amigos.length == 0){
+            alert("Nenhum amigo adicionado.");
+            return;
+        }
+
+        //Sorteando o amigo secreto.
+        let sorteado = amigos[Math.floor(Math.random() * amigos.length)]; //Arrendondando o número sorteado para um inteiro.
+        let resultado = document.getElementById("resultado");
+
+        //Exibindo o amigo sorteado.
+        resultado.innerHTML = `O seu amigo secreto é ${sorteado}!`;
+
+        //limpando a lista.
+        let limparLista = document.getElementById("listaAmigos");
+        limparLista.innerHTML = ""; 
+        amigos = [];
+
+    }
